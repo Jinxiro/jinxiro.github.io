@@ -1,0 +1,291 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body, html{
+    height: 100%;
+    background-color: whitesmoke;
+    font-family: montserrat, sans-serif;
+
+}   
+body {
+    background-image: url(header3.jpg);
+}
+
+/* The hero image */
+.hero-image {
+  background-image: url("header.jpg");
+    height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.hero-text {
+  text-align: left;
+  position: relative;
+  justify-content: left;
+  margin-top:2px;
+  color: white;
+  font-family: Renogare;
+  
+}
+.hero-text h1{
+    font-size: 80px;
+    padding-top: 5%;
+    padding-left: 5%;
+    max-width: 550px;
+}
+.navi ul{
+    list-style-type: none;
+}
+.hero-text .mytext{
+    margin-left: 3%;
+}
+.hero-text .btn-msg{
+    margin-left: 5%;
+}
+.navi li{
+    display: inline-block;
+    padding: 30px;
+    margin-top: 5px;
+    font-size: 20px;
+    vertical-align: middle;
+    font-family: CocoSharp Trial;
+
+}
+.navi li a{
+    text-decoration: none;
+    color: white;
+}
+.navi li a:hover{
+    color: rgb(40, 42, 40);
+    transition: 0.5s;
+}
+.hero-image img{
+    height: 65px;
+    margin: 5px;
+}
+.navi .logo:hover{
+    filter: brightness(20%);
+    transition: 0.5s;
+    
+    
+}
+.hero-text h1, .mytext, .navi, .btn-msg{
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.mytext{
+    font-size: 50px;
+    background-color: transparent;
+    height: 50px;
+    padding: 0 40px;
+    overflow: hidden;
+    margin-left: -2%;
+    margin-top: -12px;
+    color: yellow;
+
+
+}
+.line{
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 60px;
+    font-weight: bold;
+}
+.line:first-child{
+    animation: anim 8s infinite;
+}
+@keyframes anim{
+    0%{
+        margin-top: 0;
+    }
+    16%{
+        margin-top: -60px;
+    }
+    33%{
+        margin-top: -120px;
+    }
+    50%{
+        margin-top: -180px;
+    }
+    66%{
+        margin-top: -120px;
+    }
+    82%{
+        margin-top: -60px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+.btn-msg a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: absolute;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.638);
+}
+.btn-msg a:hover{
+    background-color: rgba(255, 0, 0, 0.819);
+    transition: 0.5s;
+    border-radius: 30px;
+}
+.media{
+    background-color: transparent;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: -10%;
+}
+.media ul{
+    text-align: center;
+}
+.media li{
+    display: inline-block;
+    margin-top: -12px;
+    font-size: 55px;
+
+}
+.media h1{
+    color: white;
+    text-align: center;
+    font-family: Couture;
+    font-size: 40px;
+    margin-bottom: 24px;
+    
+}
+.fa {
+    font-size: 150px;
+    margin: 15px;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+    transform: scale(1.20);
+    color: grey;
+    transition: 0.5s;
+    border: 1px black;
+  }
+  
+  .fa-facebook {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+
+  }
+  
+  .fa-twitter {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa-google {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa-instagram {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-youtube {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+p {
+    margin: 15px;
+    line-height: 1.75;
+}
+
+@media all and (max-width: 768px) {
+    p {
+        font-size: 15px;
+    }
+    .mytext .line{
+        font-size: 35px;
+        margin-top: 2px;
+    }
+    .mytext .line{
+        margin-left: -5%;
+    }
+    .navi li {
+        font-size: 13px;
+        padding: 21px;
+    }
+    .btn-msg {
+        margin-top: 10px;
+        height: 20px;
+    }
+    .hero-text h1{
+        font-size: 60px;
+        margin-top: -20px;
+    }
+    .hero-image{
+        height: 100%;
+        background-image: cover;
+        background-attachment: fixed;
+    }
+    .media{
+        margin-top: -30%;
+    }
+    .media h1{
+        font-size: 18px;
+    }
+    .media .fa{
+        padding: 3px;
+        padding-top: 8px;
+        margin: 12px;
+        font-size: 40PX;
+    }
+    
+    
+}
+
+
